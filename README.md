@@ -42,6 +42,9 @@ synaptic_predictions_dump_fname ='' # Put here the path to the downloaded file
 
 The runtime of the entire example notebook is ~2 minutes.
 
+### Known issues
+On Windows, we enounter a problem in the jupyter notebook when doing sql-queries (Error: "OperationalError: database is locked"). This seems to be a jupyter-notebook problem, until we solve this problem, please, if you get this error, try to run the code outside a jupyter notebook.
+
 ## Background: Circuit Reconstruction
 In volumetric EM datasets, neurons need to be identified together with synapses to be able to reconstructed the neural circuit (the Connectome).
 In this tiny example, detected synaptic partners intersected with a neuron segmentation is used to retrieve the underlying neural circuit:
