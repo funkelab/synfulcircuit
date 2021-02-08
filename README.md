@@ -32,7 +32,14 @@ For instance, for a given neuron segment id, all up-and downstream neurons can b
 
 ![ng_visual_pathway](docs/_static/ng_visual_pathway.png)
 
-You can download the combined dataset (244M predicted synapses mapped onto neuron segments) [here](https://cremi.org/static/data/20191211_fafbv14_buhmann2019_li20190805.db). This sql dump has a size of 15 GB.
+You can download the combined dataset (244M predicted synapses mapped onto neuron segments) [here](https://cremi.org/static/data/20191211_fafbv14_buhmann2019_li20190805.db).
+
+
+Info on this file: `20191211_fafbv14_buhmann2019_li20190805.db`
+- has a size of 15 GB.
+- Synapses have been mapped onto Li-segmentation version: `20190805`
+- Synapses live in the CATMAID and neuroglancer-FAFB world. To align them with the local FAFB raw data version stored at Janelia, you have to subtract 40 from the z-value
+
 
 
 See [this jupyter notebook](examples/synful_fafb_query_circuit.ipynb) for more details. You need to add the path of the downloaded file in the first jupyter cell:
